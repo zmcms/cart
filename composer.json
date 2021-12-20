@@ -1,0 +1,33 @@
+{
+	"name": "zmcms/cart",
+	"description": "Koszyk",
+	"authors": [
+		{
+		"name": "Piotr Szkudlarek",
+		"email": "pszkudlarek@zoltanmultimedia.pl"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Zmcms\\Cart\\": "src/",
+			"Zmcms\\Cart\\Backend\\Controllers\\": "src/backend/controllers/",
+			"Zmcms\\Cart\\Backend\\Db\\": "src/backend/db/",
+			"Zmcms\\Cart\\Backend\\Middleware\\": "src/backend/middleware/",
+			"Zmcms\\Cart\\Backend\\Routes\\": "src/backend/routes/",
+			"Zmcms\\Cart\\Frontend\\Controllers\\": "src/frontend/controllers/",
+			"Zmcms\\Cart\\Frontend\\Db\\": "src/frontend/db/",
+			"Zmcms\\Cart\\Frontend\\Middleware\\": "src/frontend/middleware/",
+			"Zmcms\\Cart\\Frontend\\Routes\\": "src/frontend/routes/",
+			"Zmcms\\Cart\\Migrations\\": "src/migrations/"
+		},
+		"files": ["src/helpers.php"]
+		},
+		"extra": {
+			"laravel": {
+			"providers": [
+				"Zmcms\\Cart\\ZmcmsCartServiceProvider"
+			]
+		}
+	},
+	"require": {}
+}
